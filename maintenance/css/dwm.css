@@ -300,16 +300,42 @@ i {
 
 /* line 1, ../sass/_template.scss */
 html {
+  background-image: url("../img/broken_noise.png");
+}
+
+/* line 4, ../sass/_template.scss */
+body {
   color: #C2B59B;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 9, ../sass/_template.scss */
+.container {
+  border: 0.2rem solid white;
+  width: 45rem;
+  height: 25rem;
+  padding: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
   background-color: black;
 }
 
-/* line 6, ../sass/_template.scss */
-.container {
-  border: 0.2rem solid white;
-  width: 40rem;
-  height: 20rem;
-  text-align: center;
+/* line 22, ../sass/_template.scss */
+.logo {
+  max-width: 10rem;
+}
+
+/* line 26, ../sass/_template.scss */
+h1 {
+  margin-top: 1rem;
+}
+
+/* line 30, ../sass/_template.scss */
+#clock {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  display: block;
 }
 
 /* line 2, ../sass/_countdown.scss */
