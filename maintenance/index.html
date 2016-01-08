@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Down For Maintenance</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="./css/dwm.css">
+	</head>
+	<body>
+		<div class="container">
+			<img class="logo" src="" alt="logo"/>
+			<h1>Down For Maintenance</h1>
+			<p>Sorry for the inconvenience, but we’re performing a maintenance at the moment.</p>
+			<p>We’ll be back online shortly!</p>
+			<span id="clock"></span>
+		</div>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://cdn.rawgit.com/hilios/jQuery.countdown/2.1.0/dist/jquery.countdown.min.js"></script>
+	<script>
+		$(function(){
+			$('#clock').countdown('2016/01/11 08:30:00', function(event)
+			{
+				// $(this).html(event.strftime('%D days %H:%M:%S'));
+				$(this).html(event.strftime('%H:%M:%S'));
+			}); 
+		})
+
+	</script>
+	</body>
+</html>

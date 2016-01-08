@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	# Time zone (hhmm)
+	RewriteCond %{TIME_HOUR}%{TIME_MIN} >0600
+	RewriteCond %{TIME_HOUR}%{TIME_MIN} <0800
+	# Allow IP
+	RewriteCond %{REMOTE_ADDR} !^182\.245\.97\.150
+	# Allow link
+	RewriteCond %{REQUEST_URI} !^/maintenance/$
+	RewriteCond %{REQUEST_URI} !^/downformaintenance/maintenance/$
+	# Redirect link 307->(mantenance header statue)
+	RewriteRule ^(.*)$ /maintenance/ [R=307,L]
+</IfModule>
