@@ -1,35 +1,28 @@
-<!DOCTYPE html>
+<?php
+header('HTTP/1.1 503 Service Unavailable');
+header('Retry-After: 3600');
+?>
+
+<!doctype html>
 <html lang="fr">
 	<head>
-		<title>Down For Maintenance</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-		<meta name="robots" content="index,follow" />
-		<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<link rel="icon" type="image/vnd.microsoft.icon" href="http://www.labsolu.eu/img/favicon.ico?1445317953" />
-		<link rel="shortcut icon" type="image/x-icon" href="http://www.labsolu.eu/img/favicon.ico?1445317953" />
-		<link rel="stylesheet" type="text/css" href="./css/dwm.css">
+		<title>Site Maintenance</title>
+		<style>
+			body { text-align: center; padding: 150px; }
+			h1 { font-size: 50px; }
+			body { font: 20px Helvetica, sans-serif; color: #333; }
+			article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+			a { color: #dc8100; text-decoration: none; }
+			a:hover { color: #333; text-decoration: none; }
+		</style>
 	</head>
 	<body>
-		<div class="container">
-			<img class="logo" src="http://www.labsolu.eu/themes/absolu/img/absolu/logo-p2.png" alt="logo"/>
-			<h1>Down For Maintenance</h1>
-			<p>Sorry for the inconvenience, but we’re performing a maintenance at the moment.</p>
-			<p>We’ll be back online shortly!</p>
-			<span id="clock"></span>
-		</div>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="http://cdn.rawgit.com/hilios/jQuery.countdown/2.1.0/dist/jquery.countdown.min.js"></script>
-	<script>
-		$(function(){
-			$('#clock').countdown('2016/01/11 08:30:00', function(event)
-			{
-				// $(this).html(event.strftime('%D days %H:%M:%S'));
-				$(this).html(event.strftime('%H:%M:%S'));
-			}); 
-		})
-
-	</script>
+		<article>
+				<h1>Site en maintenance</h1>
+				<div>
+						<p>Nos équipes sont en train d'effectuer une opération de maintenance sur le site, veuillez nous excuser pour la gêne occasionnée. N'hésitez pas à nous contacter par email ou téléphone pour toute urgence.
+						<p>&mdash; L'équipe</p>
+				</div>
+		</article>
 	</body>
 </html>
